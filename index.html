@@ -638,73 +638,71 @@
           Bootcamps and courses that have shaped my technical foundation
         </p>
 
-        <div class="certs-grid">
+        <div class="certs-img-grid">
 
-          <!-- Certificate: Harisenin Full Stack Developer Bootcamp -->
-          <div class="cert-card reveal-on-scroll">
-            <div class="cert-badge-wrapper">
-              <div class="cert-badge cyan">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+          <!-- Certificate Image Card -->
+          <div class="cert-img-card reveal-on-scroll" onclick="openCertModal('https://drive.google.com/uc?export=view&id=10UjYZKt5PlKCqiSP8dVJIvNt8Nb9WG4k')">
+            <div class="cert-img-wrapper">
+              <img
+                src="https://drive.google.com/uc?export=view&id=10UjYZKt5PlKCqiSP8dVJIvNt8Nb9WG4k"
+                alt="Harisenin Full Stack Developer Bootcamp Certificate - Alief Alfarizy"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <!-- Fallback jika gambar tidak load -->
+              <div class="cert-img-fallback" style="display:none;">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
                   <circle cx="12" cy="8" r="6"></circle>
                   <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"></path>
                 </svg>
+                <span>Certificate image unavailable</span>
               </div>
-              <div class="cert-ribbon">Bootcamp</div>
-            </div>
-            <div class="cert-content">
-              <div class="cert-issuer">harisenin.com — Batch 18</div>
-              <h3 class="cert-title">Full Stack Developer Bootcamp</h3>
-              <p class="cert-desc">
-                Completed an intensive full stack web development program covering frontend (React.js, State Management, API Integration) and backend (Node.js, Express, REST API, Authentication). Graduated with a perfect GPA of 4.00 and a final score of 96 (A).
-              </p>
-              <div class="cert-meta">
-                <div class="cert-meta-top">
-                  <span class="cert-date">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                    Jakarta, Indonesia
-                  </span>
-                  <span class="cert-gpa">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                    </svg>
-                    GPA 4.00 &nbsp;·&nbsp; Score 96/100
-                  </span>
-                </div>
-                <div class="cert-skills">
-                  <span class="tag">React.js</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">Express.js</span>
-                  <span class="tag">REST API</span>
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Git</span>
-                  <span class="tag">HTML &amp; CSS</span>
-                </div>
+              <div class="cert-img-overlay">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to enlarge</span>
               </div>
             </div>
-            <div class="cert-footer">
-              <span class="cert-id">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"></path>
-                </svg>
-                No. HSBC/FSD/019/18991230
-              </span>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link-btn" title="View Certificate">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-                View Certificate
-              </a>
+            <div class="cert-img-info">
+              <div class="cert-img-meta">
+                <span class="cert-ribbon">Bootcamp</span>
+                <span class="cert-gpa">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  GPA 4.00 · Score 96/100
+                </span>
+              </div>
+              <h3 class="cert-img-title">Full Stack Developer Bootcamp</h3>
+              <div class="cert-img-issuer">harisenin.com — Batch 18 &nbsp;·&nbsp; No. HSBC/FSD/019/18991230</div>
             </div>
           </div>
 
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="cert-modal" id="certModal" onclick="closeCertModal()" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+          <div class="cert-modal-inner" onclick="event.stopPropagation()">
+            <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <img id="certModalImg" src="" alt="Certificate" />
+            <a id="certModalLink" href="https://drive.google.com/file/d/10UjYZKt5PlKCqiSP8dVJIvNt8Nb9WG4k/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-modal-ext">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Open in Google Drive
+            </a>
+          </div>
         </div>
       </div>
     </section>

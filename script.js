@@ -345,3 +345,27 @@ function initCopyEmail() {
     });
   });
 }
+
+/* ==========================================================================
+   Certificate Lightbox Modal
+   ========================================================================== */
+function openCertModal(imgSrc) {
+  const modal = document.getElementById('certModal');
+  const modalImg = document.getElementById('certModalImg');
+  if (!modal || !modalImg) return;
+  modalImg.src = imgSrc;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+  const modal = document.getElementById('certModal');
+  if (!modal) return;
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeCertModal();
+});
