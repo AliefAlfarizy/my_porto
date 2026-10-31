@@ -630,6 +630,36 @@ button, input, textarea {
   overflow-x: auto;
 }
 
+.profile-photo-wrapper {
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--bg-surface);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.profile-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.profile-caption span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
 .code-keyword { color: #f472b6; }
 .code-variable { color: #38bdf8; }
 .code-property { color: #a78bfa; }
